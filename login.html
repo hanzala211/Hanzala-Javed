@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard | LogIn</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="delete.png" type="image/x-icon">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('tw-RQaeZFSpkkxFwS')
+    </script>
+    <script type="module" defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="img-div">
+            <img src="Screenshot 2024-09-23 095556.png" alt="">
+        </div>
+        <div class="login-div">
+            <div class="login-container">
+                <h2 class="heading">Welcome To DashBoard</h2>
+                <p class="heading-2">Log In your account</p>
+                <input class="input email_input" type="email" id="email" placeholder="Email">
+                <input type="password" class="input password_input" id="password" placeholder="Password">
+                <input type="number" class="input code_input" id="code" placeholder="Code">
+                <button class="btn code_btn">Send Code</button>
+                <button class="btn signin_btn">Log In</button>
+            </div>
+        </div>
+    </div>
+    <div class="message_div hidden">
+        <h3 class="headErr">ERROR</h3>
+        <p class="error_text">Text Message</p>
+        <button class="close"></button>
+    </div>
+
+
+</body>
+
+</html>

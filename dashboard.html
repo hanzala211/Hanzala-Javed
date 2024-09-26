@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard | Admin</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="delete.png" type="image/x-icon">
+    <script type="module" defer src="dashboard.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="side-bar">
+            <h2 class="logo">DashBoard</h2>
+            <i class="fa fa-search icon"></i>
+            <input type="text" placeholder="Search" class="search-box">
+            <ul class="list-items">
+                <li class="item active-class">Dashboard</li>
+                <li class="item">Orders</li>
+                <li class="item">Inventory</li>
+                <li class="item">Payments</li>
+                <li class="item">Customers</li>
+                <!-- <li class="itemLog">Logged In User: Hanzala <span class="spanImg">H</span></li> -->
+            </ul>
+        </div>
+        <div class="main-container">
+            <div class="top">
+                <h1 class="heading">DashBoard</h1>
+                <div class="btn-div">
+                    <button class="btn btn-add">Add User</button>
+                    <!-- <button class="btn btn-edit">Edit User</button> -->
+                </div>
+            </div>
+            <div class="main-users">
+                <!-- id && username && email && Password && date -->
+                <table class="table">
+                    <thead>
+                        <div class="head">
+                            <tr class="headtr">
+                                <td>Id</td>
+                                <td>Username</td>
+                                <td>Email</td>
+                                <td>Password</td>
+                                <td>Date</td>
+                            </tr>
+                        </div>
+                    </thead>
+                    <tbody>
+                        <!-- <tr class="user" data-id="">
+                            <td>123456</td>
+                            <td class="cl-username">Hanzala</td>
+                            <td>hanzalaoc211@gmail.com</td>
+                            <td class="cl-password">Hanzala211</td>
+                            <td>19 June</td>
+                            <td><button class="deleteBtn"><img src="delete.png" alt=""></button></td>
+                            <td><button class="btn-edit"><img src="edit.png" alt=""></button></td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="add-popup hidden">
+        <h2 class="add-heading">Add User</h2>
+        <label for="username">Username</label>
+        <input type="text" class="input input-username" id="username">
+        <label for="email">Email</label>
+        <input type="email" class="input input-email" id="email">
+        <label for="password">Password</label>
+        <input type="password" class="input input-password" id="password">
+        <button class="btn add-user btn-add">ADD</button>
+    </div>
+    <div class="overlay hidden"></div>
+    <button class="closeBtn hidden"><img src="close.png" alt="close"></button>
+    <div class="message_div hidden">
+        <h3 class="headErr">USER ADDED</h3>
+        <p class="error_text">Text Message</p>
+        <button class="close"></button>
+    </div>
+    <div class="add-popup editPopup hidden">
+        <h2 class="add-heading edit-heading">Edit User</h2>
+        <label for="usernameNew">Username</label>
+        <input type="text" class="input new-username" id="usernameNew">
+        <label for="emailNew">Email</label>
+        <input type="email" class="input new-email" id="emailNew">
+        <button class="btn edit-user btn-add">HEY</button>
+    </div>
+</body>
+
+</html>
