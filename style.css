@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+/* font-family: "Press Start 2P", system-ui; */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Press Start 2P", system-ui;
+}
+body {
+  background-color: #222;
+  color: white;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 2em);
+  margin: 10px auto;
+}
+.numberSection {
+  position: relative;
+}
+.numberSection > h1 {
+  text-align: center;
+  padding: 50px 0;
+  border-bottom: 7px solid #eee;
+}
+.numberSection > .number {
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  background-color: #eee;
+  color: black;
+  font-size: 40px;
+  width: 5em;
+  text-align: center;
+  padding: 30px 0;
+  transform: translate(-50%, 5%);
+}
+.btn {
+  padding: 10px;
+}
+.sectionBox {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10em;
+}
+input {
+  display: block;
+  margin-bottom: 20px;
+  width: 6em;
+  height: 2em;
+  font-size: 30px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding-left: 0.5em;
+}
+h3 {
+  margin-bottom: 10px;
+}

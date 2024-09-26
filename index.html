@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Guess my Number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <button class="btn again">Again!</button>
+        <p>(Between 1 and 20)</p>
+    </div>
+    <div class="numberSection">
+        <h1>Guess my Number!</h1>
+        <div class="number">?</div>
+    </div>
+    <div class="sectionBox">
+        <div class="inputNumber">
+            <input type="number" class="inputField" min="0" max="20" oninput="limitInput(this)">
+            <!-- oninput trigger kai limitInput function kala chi munga sa liku ya lari kao ao "this" chi dai agha input da element as an argument use kai-->
+            <button class="btn check">Check!</button>
+        </div>
+        <div class="scoreText">
+            <h3 class="guessText">Start Guessing...</h3>
+            <h3 class="score">💯 Score: <span class="scoreNumber">20</span></h3>
+            <h3 class="highScore">🥇 HighScore: <span class="highScoreText">0</span></h3>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
