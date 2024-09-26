@@ -1,0 +1,89 @@
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background-color: #2e2e2e; /* Dark earth-like background */
+	overflow: hidden;
+}
+
+#centipede {
+	position: relative;
+}
+
+.segment {
+	position: absolute;
+	width: 30px;
+	height: 15px;
+	background-color: #4b3e35; /* Brownish color to resemble a real centipede */
+	border-radius: 50% 50% 30% 30%; /* Rounded segment with an elongated shape */
+	border: 2px solid #3a2d24;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	transform-origin: center;
+}
+
+/* Adding legs to each segment using pseudo-elements */
+.segment::before,
+.segment::after {
+	content: '';
+	position: absolute;
+	width: 5px;
+	height: 10px;
+	background-color: #3a2d24;
+	top: 50%;
+	transform: translateY(-50%) rotate(45deg);
+	border-radius: 20%;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.segment::before {
+	left: -7px; /* Legs on the left */
+}
+
+.segment::after {
+	right: -7px; /* Legs on the right */
+}
+
+/* Head styling */
+.head {
+	width: 35px;
+	height: 20px;
+	background-color: #3e342b;
+	border-radius: 50% 50% 30% 30%; /* More distinct head shape */
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+	position: relative;
+}
+
+/* Antennae for the head */
+.head::before,
+.head::after {
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 2px;
+	background-color: #3a2d24;
+	top: 5px;
+	border-radius: 20%;
+	transform-origin: left;
+}
+
+.head::before {
+	left: -10px;
+	transform: rotate(-30deg); /* Left antenna */
+}
+
+.head::after {
+	right: -10px;
+	transform: rotate(30deg); /* Right antenna */
+}
+
+/* Tail styling */
+.tail {
+	width: 25px;
+	height: 12px;
+	background-color: #2e2520;
+	border-radius: 50% 50% 20% 20%; /* Smaller, narrower tail */
+}
+
+body {
+	cursor: none; /* Hide the cursor */
+}
