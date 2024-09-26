@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bankist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome.css">
+</head>
+
+<body>
+    <div class="nav nav-div">
+        <h3 class="heading welcome">Log in to get started</h3>
+        <img class="img" src="logo.png" alt="">
+        <form class="login-div">
+            <input type="text" class="user-name nav-input" placeholder="user">
+            <input type="number" class="pin-code nav-input" placeholder="PIN">
+            <button class="btn btn-submit"><i class="fa fa-long-arrow-right"></i></button>
+        </form>
+    </div>
+
+    <div class="balance-div">
+        <div class="currentBalance">
+            <h3 class="heading">Current balance</h3>
+            <p class="date-current">As of 5/9/2024, 11:36</p>
+        </div>
+        <h2 class="balance-value">0000€</h2>
+    </div>
+
+    <div class="main-container">
+        <div class="movement">
+        </div>
+        <div class="account-box">
+            <div class="transfer-box">
+                <h3 class="heading-account">Transfer money</h3>
+                <form class="div-box">
+                    <div>
+                        <input type="text" class="transfer-to transfer-input">
+                        <p>Transfer to</p>
+                    </div>
+                    <div>
+                        <input type="number" class="transfer-input amount-to">
+                        <p>Amount</p>
+                    </div>
+                    <div>
+                        <button class="btn-send btn-transfer"><i class="fa fa-long-arrow-right"></i></button>
+                    </div>
+                </form>
+
+            </div>
+            <div class="request-box">
+                <h3 class="heading-account">Request loan</h3>
+                <form class="div-box">
+                    <div>
+                        <input type="number" class="transfer-input loan-amount">
+                        <p>Amount</p>
+                    </div>
+                    <div>
+                        <button class="btn-send btn-loan"><i class="fa fa-long-arrow-right"></i></button>
+                    </div>
+                </form>
+            </div>
+            <div class="close-box">
+                <h3 class="heading-account">Close account</h3>
+                <form class="div-box">
+                    <div>
+                        <input type="text" class="transfer-input close-user">
+                        <p>Confirm User</p>
+                    </div>
+                    <div>
+                        <input type="number" class="transfer-input close-pin">
+                        <p>Confirm PIN</p>
+                    </div>
+                    <div>
+                        <button class="btn-send btn-close"><i class="fa fa-long-arrow-right"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="summary">
+        <p class="summary-label">IN</p>
+        <p class="summary-value summary-value__in">0000€</p>
+        <p class="summary-label">OUT</p>
+        <p class="summary-value summary-value__out">0000€</p>
+    </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
