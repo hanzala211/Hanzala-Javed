@@ -26,7 +26,7 @@ function moveCentipede() {
 
 			segment.style.left = currentX + moveX + 'px';
 			segment.style.top = currentY + moveY + 'px';
-		}
+		}``
 
 		offsetX = currentX;
 		offsetY = currentY;
